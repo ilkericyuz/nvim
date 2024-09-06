@@ -4,3 +4,5 @@ test.sh
 nvim
 
 spell/
+.idea/
+**/.DS_Store/
