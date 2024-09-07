@@ -2,7 +2,7 @@ tags
 test.sh
 .luarc.json
 nvim
+**/.DS_Store
 
 spell/
 .idea/
-**/.DS_Store
