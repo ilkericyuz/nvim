@@ -10,7 +10,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "ilker.plugins" }, { import = "ilker.plugins.lsp" } }, {
+require('lazy').setup({ { import = 'ilker.plugins' }, { import = 'ilker.plugins.lsp' } }, {
   checker = {
     enabled = true,
     notify = false,
@@ -37,13 +37,11 @@ require("lazy").setup({ { import = "ilker.plugins" }, { import = "ilker.plugins.
 -- Use `opts = {}` to force a plugin to be loaded.
 --
 
-
 -- Here is a more advanced example where we pass configuration
 -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
 --    require('gitsigns').setup({ ... })
 --
 -- See `:help gitsigns` to understand what the configuration keys do
-
 
 -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
 --
@@ -59,3 +57,4 @@ require("lazy").setup({ { import = "ilker.plugins" }, { import = "ilker.plugins.
 -- Then, because we use the `config` key, the configuration only runs
 -- after the plugin has been loaded:
 --  config = function() ... end
+
