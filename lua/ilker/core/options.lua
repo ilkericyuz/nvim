@@ -1,4 +1,4 @@
-vim.cmd("let g:netrw_liststyle = 3")
+vim.cmd 'let g:netrw_liststyle = 3'
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -9,7 +9,7 @@ vim.cmd("let g:netrw_liststyle = 3")
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -22,7 +22,7 @@ vim.opt.showmode = false
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.schedule(function()
-    vim.opt.clipboard = 'unnamedplus'
+  vim.opt.clipboard = 'unnamedplus'
 end)
 
 -- Enable break indent
@@ -76,10 +76,10 @@ vim.opt.wrap = false -- disable line wrapping
 -- turn on termguicolors for nightfly colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
 vim.opt.termguicolors = true
-vim.opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+vim.opt.background = 'dark' -- colorschemes that can be light or dark will be made dark
 
 -- backspace
-vim.opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
+vim.opt.backspace = 'indent,eol,start' -- allow backspace on indent, end of line or insert mode start position
 
 -- turn off swapfile
 vim.opt.swapfile = false
